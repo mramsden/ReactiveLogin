@@ -11,6 +11,8 @@
 		F8B1BA0720228A9500202109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B1BA0520228A9500202109 /* Main.storyboard */; };
 		F8B1BA0920228A9500202109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B1BA0820228A9500202109 /* Assets.xcassets */; };
 		F8B1BA0C20228A9500202109 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B1BA0A20228A9500202109 /* LaunchScreen.storyboard */; };
+		F8FD43A420228C1700E1089E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FD43A320228C1700E1089E /* RxSwift.framework */; };
+		F8FD43A520228C1700E1089E /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8FD43A320228C1700E1089E /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +25,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F8FD43A620228C1700E1089E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F8FD43A520228C1700E1089E /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F8B1B9FE20228A9500202109 /* ReactiveLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B1BA0120228A9500202109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +48,7 @@
 		F8B1BA0D20228A9500202109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8B1BA1220228A9500202109 /* ReactiveLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B1BA1820228A9500202109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8FD43A320228C1700E1089E /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FD43A420228C1700E1089E /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +76,7 @@
 				F8B1BA0020228A9500202109 /* ReactiveLogin */,
 				F8B1BA1520228A9500202109 /* ReactiveLoginTests */,
 				F8B1B9FF20228A9500202109 /* Products */,
+				F8FD43A320228C1700E1089E /* RxSwift.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +119,7 @@
 				F8B1B9FA20228A9500202109 /* Sources */,
 				F8B1B9FB20228A9500202109 /* Frameworks */,
 				F8B1B9FC20228A9500202109 /* Resources */,
+				F8FD43A620228C1700E1089E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
