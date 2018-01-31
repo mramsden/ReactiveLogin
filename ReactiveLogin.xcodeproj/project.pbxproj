@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8B1BA0220228A9500202109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1BA0120228A9500202109 /* AppDelegate.swift */; };
+		F8B1BA0720228A9500202109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B1BA0520228A9500202109 /* Main.storyboard */; };
+		F8B1BA0920228A9500202109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B1BA0820228A9500202109 /* Assets.xcassets */; };
+		F8B1BA0C20228A9500202109 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B1BA0A20228A9500202109 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8B1BA1320228A9500202109 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8B1B9F620228A9500202109 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8B1B9FD20228A9500202109;
+			remoteInfo = ReactiveLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8B1B9FE20228A9500202109 /* ReactiveLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B1BA0120228A9500202109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8B1BA0620228A9500202109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8B1BA0820228A9500202109 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8B1BA0B20228A9500202109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8B1BA0D20228A9500202109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8B1BA1220228A9500202109 /* ReactiveLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B1BA1820228A9500202109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8B1B9FB20228A9500202109 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B1BA0F20228A9500202109 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8B1B9F520228A9500202109 = {
+			isa = PBXGroup;
+			children = (
+				F8B1BA0020228A9500202109 /* ReactiveLogin */,
+				F8B1BA1520228A9500202109 /* ReactiveLoginTests */,
+				F8B1B9FF20228A9500202109 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8B1B9FF20228A9500202109 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8B1B9FE20228A9500202109 /* ReactiveLogin.app */,
+				F8B1BA1220228A9500202109 /* ReactiveLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8B1BA0020228A9500202109 /* ReactiveLogin */ = {
+			isa = PBXGroup;
+			children = (
+				F8B1BA0120228A9500202109 /* AppDelegate.swift */,
+				F8B1BA0520228A9500202109 /* Main.storyboard */,
+				F8B1BA0820228A9500202109 /* Assets.xcassets */,
+				F8B1BA0A20228A9500202109 /* LaunchScreen.storyboard */,
+				F8B1BA0D20228A9500202109 /* Info.plist */,
+			);
+			path = ReactiveLogin;
+			sourceTree = "<group>";
+		};
+		F8B1BA1520228A9500202109 /* ReactiveLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8B1BA1820228A9500202109 /* Info.plist */,
+			);
+			path = ReactiveLoginTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8B1B9FD20228A9500202109 /* ReactiveLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8B1BA1B20228A9500202109 /* Build configuration list for PBXNativeTarget "ReactiveLogin" */;
+			buildPhases = (
+				F8B1B9FA20228A9500202109 /* Sources */,
+				F8B1B9FB20228A9500202109 /* Frameworks */,
+				F8B1B9FC20228A9500202109 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveLogin;
+			productName = ReactiveLogin;
+			productReference = F8B1B9FE20228A9500202109 /* ReactiveLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8B1BA1120228A9500202109 /* ReactiveLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8B1BA1E20228A9500202109 /* Build configuration list for PBXNativeTarget "ReactiveLoginTests" */;
+			buildPhases = (
+				F8B1BA0E20228A9500202109 /* Sources */,
+				F8B1BA0F20228A9500202109 /* Frameworks */,
+				F8B1BA1020228A9500202109 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8B1BA1420228A9500202109 /* PBXTargetDependency */,
+			);
+			name = ReactiveLoginTests;
+			productName = ReactiveLoginTests;
+			productReference = F8B1BA1220228A9500202109 /* ReactiveLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8B1B9F620228A9500202109 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Bitsden;
+				TargetAttributes = {
+					F8B1B9FD20228A9500202109 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F8B1BA1120228A9500202109 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F8B1B9FD20228A9500202109;
+					};
+				};
+			};
+			buildConfigurationList = F8B1B9F920228A9500202109 /* Build configuration list for PBXProject "ReactiveLogin" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8B1B9F520228A9500202109;
+			productRefGroup = F8B1B9FF20228A9500202109 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8B1B9FD20228A9500202109 /* ReactiveLogin */,
+				F8B1BA1120228A9500202109 /* ReactiveLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8B1B9FC20228A9500202109 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B1BA0C20228A9500202109 /* LaunchScreen.storyboard in Resources */,
+				F8B1BA0920228A9500202109 /* Assets.xcassets in Resources */,
+				F8B1BA0720228A9500202109 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B1BA1020228A9500202109 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8B1B9FA20228A9500202109 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B1BA0220228A9500202109 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B1BA0E20228A9500202109 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8B1BA1420228A9500202109 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8B1B9FD20228A9500202109 /* ReactiveLogin */;
+			targetProxy = F8B1BA1320228A9500202109 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8B1BA0520228A9500202109 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8B1BA0620228A9500202109 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8B1BA0A20228A9500202109 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8B1BA0B20228A9500202109 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8B1BA1920228A9500202109 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8B1BA1A20228A9500202109 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8B1BA1C20228A9500202109 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4T4M9B363T;
+				INFOPLIST_FILE = ReactiveLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitsden.ReactiveLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8B1BA1D20228A9500202109 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4T4M9B363T;
+				INFOPLIST_FILE = ReactiveLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitsden.ReactiveLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8B1BA1F20228A9500202109 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4T4M9B363T;
+				INFOPLIST_FILE = ReactiveLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitsden.ReactiveLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveLogin.app/ReactiveLogin";
+			};
+			name = Debug;
+		};
+		F8B1BA2020228A9500202109 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4T4M9B363T;
+				INFOPLIST_FILE = ReactiveLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitsden.ReactiveLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveLogin.app/ReactiveLogin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8B1B9F920228A9500202109 /* Build configuration list for PBXProject "ReactiveLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B1BA1920228A9500202109 /* Debug */,
+				F8B1BA1A20228A9500202109 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8B1BA1B20228A9500202109 /* Build configuration list for PBXNativeTarget "ReactiveLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B1BA1C20228A9500202109 /* Debug */,
+				F8B1BA1D20228A9500202109 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8B1BA1E20228A9500202109 /* Build configuration list for PBXNativeTarget "ReactiveLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B1BA1F20228A9500202109 /* Debug */,
+				F8B1BA2020228A9500202109 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8B1B9F620228A9500202109 /* Project object */;
+}
