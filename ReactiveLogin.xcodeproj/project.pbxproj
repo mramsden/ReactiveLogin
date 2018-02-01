@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F838C7F820228D7200DFF702 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C7F720228D7200DFF702 /* LoginPresenterTests.swift */; };
+		F838C7FA20228DC400DFF702 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C7F920228DC400DFF702 /* LoginPresenter.swift */; };
+		F838C7FC2023A04B00DFF702 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F838C7FD2023A04B00DFF702 /* RxTest.framework */; };
 		F8B1BA0220228A9500202109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1BA0120228A9500202109 /* AppDelegate.swift */; };
 		F8B1BA0720228A9500202109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B1BA0520228A9500202109 /* Main.storyboard */; };
 		F8B1BA0920228A9500202109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B1BA0820228A9500202109 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F838C7F720228D7200DFF702 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		F838C7F920228DC400DFF702 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		F838C7FD2023A04B00DFF702 /* RxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B1B9FE20228A9500202109 /* ReactiveLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B1BA0120228A9500202109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B1BA0620228A9500202109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,12 +70,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F838C7FC2023A04B00DFF702 /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F838C7FB2023A04B00DFF702 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F838C7FD2023A04B00DFF702 /* RxTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8B1B9F520228A9500202109 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +92,7 @@
 				F8B1BA1520228A9500202109 /* ReactiveLoginTests */,
 				F8B1B9FF20228A9500202109 /* Products */,
 				F8FD43A320228C1700E1089E /* RxSwift.framework */,
+				F838C7FB2023A04B00DFF702 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				F8B1BA0120228A9500202109 /* AppDelegate.swift */,
+				F838C7F920228DC400DFF702 /* LoginPresenter.swift */,
 				F8B1BA0520228A9500202109 /* Main.storyboard */,
 				F8B1BA0820228A9500202109 /* Assets.xcassets */,
 				F8B1BA0A20228A9500202109 /* LaunchScreen.storyboard */,
@@ -105,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				F8B1BA1820228A9500202109 /* Info.plist */,
+				F838C7F720228D7200DFF702 /* LoginPresenterTests.swift */,
 			);
 			path = ReactiveLoginTests;
 			sourceTree = "<group>";
@@ -164,6 +182,7 @@
 					};
 					F8B1BA1120228A9500202109 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F8B1B9FD20228A9500202109;
 					};
@@ -213,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F838C7FA20228DC400DFF702 /* LoginPresenter.swift in Sources */,
 				F8B1BA0220228A9500202109 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F838C7F820228D7200DFF702 /* LoginPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,12 +417,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4T4M9B363T;
 				INFOPLIST_FILE = ReactiveLoginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitsden.ReactiveLoginTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveLogin.app/ReactiveLogin";
@@ -413,6 +436,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4T4M9B363T;
 				INFOPLIST_FILE = ReactiveLoginTests/Info.plist;
