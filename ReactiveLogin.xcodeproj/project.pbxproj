@@ -10,6 +10,8 @@
 		F838C7F820228D7200DFF702 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C7F720228D7200DFF702 /* LoginPresenterTests.swift */; };
 		F838C7FA20228DC400DFF702 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F838C7F920228DC400DFF702 /* LoginPresenter.swift */; };
 		F838C7FC2023A04B00DFF702 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F838C7FD2023A04B00DFF702 /* RxTest.framework */; };
+		F86DE8892023B5540041B31A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86DE8882023B5540041B31A /* LoginViewController.swift */; };
+		F86DE88A2023B6140041B31A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86DE88B2023B6140041B31A /* RxCocoa.framework */; };
 		F8B1BA0220228A9500202109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1BA0120228A9500202109 /* AppDelegate.swift */; };
 		F8B1BA0720228A9500202109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B1BA0520228A9500202109 /* Main.storyboard */; };
 		F8B1BA0920228A9500202109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B1BA0820228A9500202109 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		F838C7F720228D7200DFF702 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		F838C7F920228DC400DFF702 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		F838C7FD2023A04B00DFF702 /* RxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86DE8882023B5540041B31A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F86DE88B2023B6140041B31A /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B1B9FE20228A9500202109 /* ReactiveLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B1BA0120228A9500202109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B1BA0620228A9500202109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86DE88A2023B6140041B31A /* RxCocoa.framework in Frameworks */,
 				F8FD43A420228C1700E1089E /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +85,7 @@
 		F838C7FB2023A04B00DFF702 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F86DE88B2023B6140041B31A /* RxCocoa.framework */,
 				F838C7FD2023A04B00DFF702 /* RxTest.framework */,
 			);
 			name = Frameworks;
@@ -110,6 +116,7 @@
 			children = (
 				F8B1BA0120228A9500202109 /* AppDelegate.swift */,
 				F838C7F920228DC400DFF702 /* LoginPresenter.swift */,
+				F86DE8882023B5540041B31A /* LoginViewController.swift */,
 				F8B1BA0520228A9500202109 /* Main.storyboard */,
 				F8B1BA0820228A9500202109 /* Assets.xcassets */,
 				F8B1BA0A20228A9500202109 /* LaunchScreen.storyboard */,
@@ -232,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86DE8892023B5540041B31A /* LoginViewController.swift in Sources */,
 				F838C7FA20228DC400DFF702 /* LoginPresenter.swift in Sources */,
 				F8B1BA0220228A9500202109 /* AppDelegate.swift in Sources */,
 			);

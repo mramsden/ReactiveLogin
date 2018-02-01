@@ -21,24 +21,37 @@ struct LoginCredential: Equatable {
 }
 
 struct LoginPresenter {
+    struct UserEventProvider {
+        let usernameChanged: Observable<String?>
+        let passwordChanged: Observable<String?>
+
+        fileprivate func usernameObservable(defaultValue: String) -> Observable<String> {
+            return usernameChanged.map { $0 ?? defaultValue }
+        }
+
+        fileprivate func passwordObservable(defaultValue: String) -> Observable<String> {
+            return passwordChanged.map { $0 ?? defaultValue }
+        }
+    }
+
     let isValid: Observable<Bool>
     let credential: Observable<LoginCredential>
 
-    init(username: Observable<String>, password: Observable<String>) {
-        isValid = Observable.concat(Observable.from(optional: false), LoginPresenter.isValidObservable(username, password))
-        credential = Observable.concat(Observable.from(optional: .empty), LoginPresenter.credentialObservable(username, password))
+    init(userEventProvider: UserEventProvider) {
+        isValid = Observable.concat(Observable.from(optional: false), LoginPresenter.isValidObservable(userEventProvider))
+        credential = Observable.concat(Observable.from(optional: .empty), LoginPresenter.credentialObservable(userEventProvider))
     }
 
-    private static func isValidObservable(_ username: Observable<String>, _ password: Observable<String>) -> Observable<Bool> {
-        return Observable.zip(username, password) { username, password in
-            let credential = LoginCredential(username: username, password: password)
+    private static func isValidObservable(_ eventProvider: UserEventProvider) -> Observable<Bool> {
+        return Observable.zip(eventProvider.usernameObservable(defaultValue: ""), eventProvider.passwordObservable(defaultValue: "")) {
+            let credential = LoginCredential(username: $0, password: $1)
             return credential.isValid
         }
     }
 
-    private static func credentialObservable(_ username: Observable<String>, _ password: Observable<String>) -> Observable<LoginCredential> {
-        return Observable.zip(username, password) { username, password in
-            let credential = LoginCredential(username: username, password: password)
+    private static func credentialObservable(_ eventProvider: UserEventProvider) -> Observable<LoginCredential> {
+        return Observable.zip(eventProvider.usernameObservable(defaultValue: ""), eventProvider.passwordObservable(defaultValue: "")) {
+            let credential = LoginCredential(username: $0, password: $1)
             return credential.isValid ? credential : LoginCredential.empty
         }
     }

@@ -103,16 +103,18 @@ class LoginPresenterTests: XCTestCase {
     }
 
     func makeInitialLoginViewModel() -> LoginPresenter {
-        return LoginPresenter(
-            username: scheduler.createColdObservable([]).asObservable(),
-            password: scheduler.createColdObservable([]).asObservable()
+        let userEventProvider = LoginPresenter.UserEventProvider(
+            usernameChanged: scheduler.createColdObservable([]).asObservable(),
+            passwordChanged: scheduler.createColdObservable([]).asObservable()
         )
+        return LoginPresenter(userEventProvider: userEventProvider)
     }
 
     func makeLoginViewModel(username: String = "", password: String = "") -> LoginPresenter {
-        return LoginPresenter(
-            username: scheduler.createColdObservable([next(0, username)]).asObservable(),
-            password: scheduler.createColdObservable([next(0, password)]).asObservable()
+        let userEventProvider = LoginPresenter.UserEventProvider(
+            usernameChanged: scheduler.createColdObservable([next(0, username as String?)]).asObservable(),
+            passwordChanged: scheduler.createColdObservable([next(0, password as String?)]).asObservable()
         )
+        return LoginPresenter(userEventProvider: userEventProvider)
     }
 }
