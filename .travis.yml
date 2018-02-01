@@ -3,6 +3,8 @@ os: osx
 osx_image: xcode9.2
 xcode_workspace: ReactiveLogin.xcworkspace
 xcode_scheme: ReactiveLogin
+cache:
+  - bundler
 
 git:
   submodules: false
