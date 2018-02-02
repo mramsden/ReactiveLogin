@@ -2,17 +2,23 @@ TEST_PLATFORM?=iOS Simulator
 TEST_DEVICE_NAME?=iPhone 8
 
 test_destination=platform=$(TEST_PLATFORM),name=$(TEST_DEVICE_NAME)
-xcode_test=xcodebuild test \
+
+xcode_project=-workspace ReactiveLogin.xcworkspace \
+	-scheme ReactiveLogin
+
+xcode_build_for_test=xcodebuild build-for-testing \
+	$(xcode_project) \
 	-derivedDataPath ./build/DerivedData \
-	-workspace ReactiveLogin.xcworkspace \
-	-scheme ReactiveLogin \
+	-parallelizeTargets
+xcode_test=xcodebuild test \
+	$(xcode_project) \
+	-derivedDataPath ./build/DerivedData \
 	-destination '$(test_destination)' \
 	-parallelizeTargets
 xcode_archive=xcodebuild archive \
+	$(xcode_project) \
 	-derivedDataPath ./build/DerivedData \
 	-archivePath ./build/Archives/ReactiveLogin \
-	-workspace ReactiveLogin.xcworkspace \
-	-scheme ReactiveLogin \
 	-configuration Release \
 	-parallelizeTargets
 xcpretty=bundle exec xcpretty -f ./teamcity_formatter.rb
@@ -22,6 +28,9 @@ test: clean-reports
 
 test-ci:
 	$(xcode_test) | $(xcpretty)
+
+build-for-testing:
+	$(xcode_build_for_test) | $(xcpretty)
 
 archive:
 	$(xcode_archive) | $(xcpretty)

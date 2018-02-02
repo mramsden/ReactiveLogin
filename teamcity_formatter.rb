@@ -65,6 +65,7 @@ class TeamCityFormatter < XCPretty::Simple
   end
 
   def format_compile_warning(file, file_path, reason, line, cursor)
+    @compile_warnings = (@compile_warnings || 0) + 1
     "##teamcity[message text='#{file_path}: #{reason}\n\n#{line}\n#{cursor}\n' status='warning']"    
   end
 
@@ -88,6 +89,13 @@ class TeamCityFormatter < XCPretty::Simple
 
   def format_phase_success(phase_name)
     "##teamcity[progressMessage '#{phase_name} Success']"
+  end
+
+  def finish
+    compile_warnings = @compile_warnings || 0
+    if compile_warnings > 0
+      "##teamcity[buildStatisticValue key='build.compile.warnings' value='#{compile_warnings}'"
+    end
   end
 
 end
