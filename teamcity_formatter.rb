@@ -66,7 +66,11 @@ class TeamCityFormatter < XCPretty::Simple
 
   def format_compile_warning(file, file_path, reason, line, cursor)
     @compile_warnings = (@compile_warnings || 0) + 1
-    "##teamcity[message text='#{file_path}: #{reason}\n\n#{line}\n#{cursor}\n' status='warning']"    
+    "##teamcity[blockOpened name='Compile warning #{@compile_warnings}' description='#{file_path}']"
+    "##teamcity[message text='#{reason}']"
+    "##teamcity[message text='#{line}']"
+    "##teamcity[message text='#{cursor}']"
+    "##teamcity[blockClosed name='Compile warning #{@compile_warnings}']"    
   end
 
   def format_error(message)
@@ -94,7 +98,7 @@ class TeamCityFormatter < XCPretty::Simple
   def finish
     compile_warnings = @compile_warnings || 0
     if compile_warnings > 0
-      "##teamcity[buildStatisticValue key='build.compile.warnings' value='#{compile_warnings}'"
+      "##teamcity[buildStatisticValue key='BuildCompilationWarnings' value='#{compile_warnings}'"
     end
   end
 

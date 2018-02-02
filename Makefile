@@ -10,7 +10,7 @@ xcode_build_for_test=xcodebuild build-for-testing \
 	$(xcode_project) \
 	-derivedDataPath ./build/DerivedData \
 	-parallelizeTargets
-xcode_test=xcodebuild test \
+xcode_test=xcodebuild test-without-building \
 	$(xcode_project) \
 	-derivedDataPath ./build/DerivedData \
 	-destination '$(test_destination)' \
