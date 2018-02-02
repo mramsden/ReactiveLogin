@@ -18,7 +18,7 @@ xcode_archive=xcodebuild archive \
 xcpretty=bundle exec xcpretty -f ./teamcity_formatter.rb
 
 test: clean-reports
-	$(xcode_test) | $(xcpretty) -r junit -r html
+	$(xcode_test) 2>&1 | $(xcpretty) -r junit -r html
 
 test-ci:
 	$(xcode_test) | $(xcpretty)

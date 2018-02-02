@@ -16,7 +16,7 @@ class TeamCityFormatter < XCPretty::Simple
   end
 
   def format_linking(target, build_variants, arch)
-    "##teamcity[progressMessage 'Linking #{target}'"    
+    "##teamcity[progressMessage 'Linking #{target}']"    
   end
 
   # Used when opening a test target
@@ -64,8 +64,8 @@ class TeamCityFormatter < XCPretty::Simple
         "##teamcity[testFinished name='#{test}']"
   end
 
-  def format_warning(message)
-    "##teamcity[message text='#{message}' status='warning']"    
+  def format_compile_warning(file, file_path, reason, line, cursor)
+    "##teamcity[message text='#{file_path}: #{reason}\n\n#{line}\n#{cursor}\n' status='warning']"    
   end
 
   def format_error(message)
